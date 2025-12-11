@@ -4,11 +4,12 @@ import {BrowserRouter,Routes,Route,Navigate} from "react-router-dom"
 import ChatRoom from './pages/ChatRoom'
 import { AuthContext } from './context/AuthContext'
 import PrivateChat from './pages/PrivateChat'
-import './styles/chat.css'
 import PrivateLayout from './pages/PrivateLayout'
 import EmptyChat from './components/EmptyChat'
 import './index.css'
+import "./App.css";
   
+
 function PrivateRoutes({children}){
   let {user,loading} = useContext(AuthContext);
    if (loading) return <h2>Loading...</h2>;

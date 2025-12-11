@@ -1,0 +1,111 @@
+.users-list {
+  padding: 20px;
+  background: white;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.users-list h3 {
+  margin: 0 0 20px 0;
+  color: #1a1a1a;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-bottom: 8px;
+}
+
+.user-item:hover {
+  background: #f8f9fa;
+}
+
+.user-item:active {
+  background: #e9ecef;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #667eea;
+}
+
+.user-item span {
+  font-weight: 500;
+  color: #1a1a1a;
+  font-size: 1rem;
+}
+
+.users-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.users-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+.users-list::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 5px;
+}
+
+.users-list::-webkit-scrollbar-thumb:hover {
+  background: #5a67d8;
+}
+
+@media (max-width: 768px) {
+  .users-list {
+    padding: 15px;
+  }
+  
+  .user-item {
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .user-avatar {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .users-list h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .users-list {
+    padding: 12px;
+  }
+  
+  .user-item {
+    padding: 8px;
+    gap: 8px;
+  }
+  
+  .user-avatar {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .users-list h3 {
+    font-size: 1rem;
+  }
+  
+  .user-item span {
+    font-size: 0.95rem;
+  }
+}
